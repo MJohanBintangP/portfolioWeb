@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      rotate: {
+        '-7': '-7deg',
+      },
     },
   },
   plugins: [require('tailwindcss-motion')],
