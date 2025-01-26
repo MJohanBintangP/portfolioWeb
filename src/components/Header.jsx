@@ -30,15 +30,15 @@ const Header = () => {
           } transition-all duration-500 ease-in-out`}
           onMouseEnter={() => iconState === 'default' && setIconState('hover')}
           onMouseLeave={() => iconState === 'hover' && setIconState('default')}
-          style={{ width: '120px', justifyContent: 'center', height: '40px' }}
+          style={{ width: '120px', justifyContent: 'center', height: '40px', position: 'relative', zIndex: 10 }} // Tambahkan z-index dan position
         >
           {iconState === 'clicked' ? <Check size={16} weight="bold" className="bg-transparent" /> : iconState === 'hover' ? <DownloadSimple size={16} weight="bold" className="bg-transparent" /> : 'Download CV'}
         </button>
       </div>
 
-      {/* Gambar */}
-      <div className="max-w-full md:max-w-[400px] w-full">
-        <img src="/toji.png" alt="Moch. Johan Bintang Pratama" className="w-full h-auto object-contain" />
+      {/* Gambar dan kontainer div */}
+      <div className="max-w-full md:max-w-[400px] w-full bg-[#454545] rounded-[50px] px-[2rem] relative mb-[2rem] mt-[6rem]">
+        <img src="/toji.png" alt="profileBranding" className="w-full h-auto object-contain bg-transparent -mt-40" />
       </div>
     </div>
   );
