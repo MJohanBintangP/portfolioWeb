@@ -37,8 +37,8 @@ const Header = () => {
       </div>
 
       {/* Gambar dan kontainer div */}
-      <div className="max-w-full md:max-w-[400px] w-full bg-[#454545] rounded-[50px] px-[2rem] relative mb-[2rem] mt-[6rem]">
-        <img src="/toji.png" alt="profileBranding" className="w-full h-auto object-contain bg-transparent -mt-40" />
+      <div className="max-w-full md:max-w-[400px] w-full bg-[#454545] rounded-[50px] px-[2rem] relative mb-[2rem] mt-[6rem] image-container">
+        <img src="/toji.png" alt="profileBranding" className="w-full h-auto object-contain bg-transparent -mt-[7rem] md:-mt-40" />
       </div>
     </div>
   );
