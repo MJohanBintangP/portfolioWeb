@@ -32,9 +32,9 @@ export default function App() {
             }
           />
 
-          <Route path="/Mindease" element={<Mindease />} />
-          <Route path="/Agrisync" element={<Agrisync />} />
-          <Route path="/Logilink" element={<Logilink />} />
+          <Route path="/MindEase" element={<Mindease />} />
+          <Route path="/AgriSync" element={<Agrisync />} />
+          <Route path="/LogiLink" element={<Logilink />} />
         </Routes>
       </div>
     </Router>

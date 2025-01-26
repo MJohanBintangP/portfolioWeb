@@ -15,34 +15,34 @@ const Portfolio = () => {
           {/* Card 1 */}
           <div>
             <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
-              <Link to="/Mindease">
+              <Link to="/MindEase">
                 <img src={mindeaseLogo} alt="mindeaseLogo" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
             </div>
             <p className="text-white text-xs mt-4 lg:text-left text-center">Mobile App . Web App</p>
-            <h3 className="text-white text-xl font-semibold lg:text-left text-center">Mindease</h3>
+            <h3 className="text-white text-xl font-semibold lg:text-left text-center">MindEase</h3>
           </div>
 
           {/* Card 2 */}
           <div>
             <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
-              <Link to="/Logilink">
+              <Link to="/LogiLink">
                 <img src={logilink} alt="Logilink" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
             </div>
             <p className="text-white text-xs mt-4 lg:text-left text-center">UI/UX Design</p>
-            <h3 className="text-white text-xl font-semibold lg:text-left text-center">Logilink</h3>
+            <h3 className="text-white text-xl font-semibold lg:text-left text-center">LogiLink</h3>
           </div>
 
           {/* Card 3 */}
           <div>
             <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
-              <Link to="/Agrisync">
+              <Link to="/AgriSync">
                 <img src={agrisync} alt="agrisync" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
             </div>
             <p className="text-white text-xs mt-4 lg:text-left text-center">UI/UX Design</p>
-            <h3 className="text-white text-xl font-semibold lg:text-left text-center">Agrisync</h3>
+            <h3 className="text-white text-xl font-semibold lg:text-left text-center">AgriSync</h3>
           </div>
 
           {/* Card 4 */}
