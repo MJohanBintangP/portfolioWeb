@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Mindease from './pages/Mindease';
 import Agrisync from './pages/Agrisync';
 import Logilink from './pages/Logilink';
+import Coursera from './pages/Coursera';
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/MindEase" element={<Mindease />} />
           <Route path="/AgriSync" element={<Agrisync />} />
           <Route path="/LogiLink" element={<Logilink />} />
+          <Route path="/Coursera.io" element={<Coursera />} />
         </Routes>
       </div>
     </Router>

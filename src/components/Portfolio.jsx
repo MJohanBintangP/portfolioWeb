@@ -2,6 +2,7 @@ import React from 'react';
 import mindeaseLogo from '../assets/mindease.png';
 import agrisync from '../assets/agrisync.png';
 import logilink from '../assets/logilink.png';
+import coursera from '../assets/coursera.png';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
@@ -47,13 +48,13 @@ const Portfolio = () => {
 
           {/* Card 4 */}
           <div>
-            <div className="bg-[#454545] w-[300px] h-[300px] p-5 rounded-[50px] flex justify-center items-center text-center">
-              <div className="bg-transparent">
-                <h1 className="bg-transparent text-[#D4D4D4] text-[20px] font-semibold">Coming soon</h1>
-              </div>
+            <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
+              <Link to="/Coursera.io">
+                <img src={coursera} alt="coursera" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
+              </Link>
             </div>
-            <p className="text-white text-xs mt-4 lg:text-left text-center">Coming soon</p>
-            <h3 className="text-white text-xl font-semibold lg:text-left text-center">Coming soon</h3>
+            <p className="text-white text-xs mt-4 lg:text-left text-center">Web App</p>
+            <h3 className="text-white text-xl font-semibold lg:text-left text-center">Coursera.io</h3>
           </div>
 
           {/* Card 5 */}
