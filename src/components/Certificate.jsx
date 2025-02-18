@@ -22,13 +22,13 @@ const Certificate = () => {
       <div
         className="flex flex-col lg:flex-row items-center text-white rounded-[20px] lg:rounded-[70px] h-auto lg:h-[700px] px-6 lg:px-[8rem] py-8"
         style={{
-          background: 'linear-gradient(0deg, #252525 20%, #0C0C0C 100%)',
+          background: 'linear-gradient(0deg, #ffffff 20%, #f4f4f4 100%)',
         }}
       >
         <div className="bg-transparent flex-1 mb-6 lg:mb-0 text-center lg:text-left">
-          <h2 className="bg-transparent text-xl lg:text-2xl font-semibold mb-2">Course certificates</h2>
-          <p className="bg-transparent text-gray-400 mb-4 text-sm lg:text-base">Click on a certificate to verify credential</p>
-          <a href="https://bit.ly/courseCertificates" target="_blank" rel="noopener noreferrer" className="text-[12px] lg:text-sm bg-transparent text-white hover:underline transition font-medium">
+          <h2 className="bg-transparent text-[#252525] text-xl lg:text-2xl font-semibold mb-2">Course certificates</h2>
+          <p className="bg-transparent text-[#252525] mb-4 text-sm lg:text-base">Click on a certificate to verify credential</p>
+          <a href="https://bit.ly/courseCertificates" target="_blank" rel="noopener noreferrer" className="text-[12px] lg:text-sm bg-transparent text-[#252525] hover:underline transition font-medium">
             See all my certificates
           </a>
         </div>

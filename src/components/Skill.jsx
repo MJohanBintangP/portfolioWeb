@@ -6,8 +6,8 @@ import Figma from '../assets/figmaLogo.png';
 
 const Skill = () => {
   return (
-    <div className="max-w-[1300px] mx-auto text-white flex flex-col items-center justify-center px-4 sm:px-8">
-      <h1 className="text-[30px] font-bold mb-[12rem]">Tech Skills</h1>
+    <div className="max-w-[1300px] mx-auto text-white flex flex-col items-center justify-center px-4 sm:px-8 mb-[5rem]">
+      <h1 className="text-[30px] text-[#252525] font-bold mb-[12rem]">Tech Skills</h1>
       <div className="flex flex-wrap justify-center gap-[12rem] w-full mb-[17rem]">
         {[
           { src: ReactLogo, alt: 'React Icon', link: 'https://reactjs.org/' },

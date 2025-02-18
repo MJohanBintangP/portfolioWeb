@@ -1,45 +1,83 @@
 import React, { useState } from 'react';
-import { DownloadSimple, Check } from '@phosphor-icons/react';
+import { EnvelopeSimple, Clipboard, Check, List, X, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 
 const Header = () => {
-  const [iconState, setIconState] = useState('default');
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleButtonClick = () => {
-    setIconState('clicked');
-    const link = document.createElement('a');
-    link.href = '/MOCH JOHAN BINTANG PRATAMA CV 2025.pdf';
-    link.download = 'CV JANUARI 2025 - MOCH.JOHAN BINTANG PRATAMA.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setTimeout(() => {
-      setIconState('default');
-    }, 2000);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between px-10 md:px-[6.5rem] bg-[#252525]">
-      {/* Kontainer Teks */}
-      <div className="flex flex-col max-w-full md:max-w-[500px] h-full w-full text-left md:text-left">
-        <h1 className="text-[24px] md:text-[30px] font-semibold mb-[2px] text-[#FFFFFF]">MOCH. JOHAN BINTANG PRATAMA</h1>
-        <h4 className="text-[16px] md:text-[18px] font-[300] text-[#FFFFFF] mb-[1.5rem]">Creating web and mobile applications has become my daily life;</h4>
-        <button
-          onClick={handleButtonClick}
-          className={`inline-flex items-center gap-2 py-3 px-5 rounded-[15px] border text-[10px] md:text-[10px] ${
-            iconState === 'clicked' ? 'bg-[#FFFFFF] text-[#252525] border-[#7A7A7A]' : 'bg-[#252525] text-white border-[#7A7A7A]'
-          } transition-all duration-500 ease-in-out`}
-          onMouseEnter={() => iconState === 'default' && setIconState('hover')}
-          onMouseLeave={() => iconState === 'hover' && setIconState('default')}
-          style={{ width: '120px', justifyContent: 'center', height: '40px', position: 'relative', zIndex: 10 }} // Tambahkan z-index dan position
-        >
-          {iconState === 'clicked' ? <Check size={16} weight="bold" className="bg-transparent" /> : iconState === 'hover' ? <DownloadSimple size={16} weight="bold" className="bg-transparent" /> : 'Download CV'}
-        </button>
+    <div className="relative">
+      {/* Navbar Container */}
+      <div className="flex justify-between items-center h-[9rem] px-10 max-w-[1420px] mx-auto">
+        {/* Logo */}
+        <h1 className="text-[#4B4B4B] text-[20px] font-semibold">mjohanbintangp</h1>
+        {/* Desktop Navigation */}
+        <ul className="hidden lg:flex text-[#252525] items-center text-[13px]">
+          <li className="p-4 hover:text-[#d9d9d9] transition-colors duration-300">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mjohanbintangp/">
+              LinkedIn
+            </a>
+          </li>
+          <li>/</li>
+          <li className="p-4 hover:text-[#d9d9d9] transition-colors duration-300">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mjohanbintangp/">
+              Instagram
+            </a>
+          </li>
+          <li>/</li>
+          <li className="p-4 hover:text-[#d9d9d9] transition-colors duration-300">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@code.habits">
+              Youtube
+            </a>
+          </li>
+        </ul>
+
+        {/* Mobile Menu Icon */}
+        <div className="lg:hidden cursor-pointer relative" onClick={toggleMenu}>
+          <div className="relative w-6 h-6">
+            <div className={`absolute top-0 left-0 transition-all duration-500 ease-in-out ${menuOpen ? 'opacity-0 rotate-[135deg]' : 'opacity-100 rotate-0'}`}>
+              <List size={25} weight="bold" color="#252525" />
+            </div>
+            <div className={`absolute top-0 left-0 transition-all duration-500 ease-in-out ${menuOpen ? 'opacity-100 rotate-0' : 'opacity-0 rotate-[135deg]'}`}>
+              <X size={25} weight="bold" color="#252525" />
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Gambar dan kontainer div */}
-      <div className="max-w-full md:max-w-[400px] w-full bg-[#454545] rounded-[50px] px-[2rem] relative mb-[2rem] mt-[6rem] image-container">
-        <img src="/toji.png" alt="profileBranding" className="w-full h-auto object-contain bg-transparent -mt-[7rem] md:-mt-40" />
-      </div>
+      {/* Dropdown Menu */}
+      {menuOpen && (
+        <div className="absolute top-[7.5rem] px-2 py-6 right-10 bg-[#303030] rounded-[22px] z-50 transition-all duration-300">
+          <ul className="text-[#ffffff] space-y-4 bg-transparent">
+            {/* LinkedIn */}
+            <li className="bg-transparent">
+              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#444444] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mjohanbintangp/">
+                <LinkedinLogo className="bg-transparent" size={20} weight="regular" />
+                <h1 className="text-[13px] bg-transparent">LinkedIn</h1>
+              </a>
+            </li>
+
+            {/* Instagram */}
+            <li className="bg-transparent">
+              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#444444] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mjohanbintangp/">
+                <InstagramLogo className="bg-transparent" size={20} weight="regular" />
+                <h1 className="text-[13px] bg-transparent">Instagram</h1>
+              </a>
+            </li>
+
+            {/* YouTube */}
+            <li className="bg-transparent">
+              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#444444] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@code.habits">
+                <YoutubeLogo className="bg-transparent" size={20} weight="regular" />
+                <h1 className="text-[13px] bg-transparent">YouTube</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
