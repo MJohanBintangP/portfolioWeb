@@ -55,8 +55,8 @@ const Section = () => {
           </div>
 
           {/* Lokasi */}
-          <div className="px-12 py-1 mb-1.5 rounded-full bg-[#E8E8E8]">
-            <span className="bg-transparent flex justify-center items-center font-medium text-[8px] text-[#808080] text-sm">Surabaya, East Java</span>
+          <div className="px-12 py-2 mb-1.5 rounded-full bg-[#E8E8E8]">
+            <span className="bg-transparent flex justify-center items-center font-medium text-[8px] text-[#808080]">Surabaya, East Java</span>
           </div>
         </div>
       </div>
