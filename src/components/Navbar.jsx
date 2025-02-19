@@ -46,9 +46,9 @@ const Navbar = () => {
           { id: 'contact', Icon: EnvelopeSimple },
         ].map(({ id, Icon }) => (
           <li key={id} className="bg-transparent relative flex items-center">
-            {activeSection === id && <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-5 h-0.5 bg-[#5830FF] rounded-b-full"></div>}
-            <button onClick={() => handleScroll(id)}>
-              <Icon className={`bg-transparent text-[#CFCFCF] hover:text-[#5830FF] transition-colors duration-300 ${activeSection === id ? 'text-[#5830FF]' : ''}`} size={20} weight="bold" />
+            {activeSection === id && <div className=" absolute -top-4 left-1/2 transform -translate-x-1/2 w-5 h-0.5 bg-[#5830FF] rounded-b-full"></div>}
+            <button onClick={() => handleScroll(id)} className={`bg-transparent transition-colors duration-300 ${activeSection === id ? 'text-[#5830FF]' : 'text-[#CFCFCF]'} hover:text-[#5830FF]`}>
+              <Icon className="bg-transparent" size={20} weight="bold" />
             </button>
           </li>
         ))}
