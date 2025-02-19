@@ -13,6 +13,7 @@ import Mindease from './pages/Mindease';
 import Agrisync from './pages/Agrisync';
 import Logilink from './pages/Logilink';
 import Coursera from './pages/Coursera';
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             path="/"
             element={
               <>
+                <Navbar />
                 <Header />
                 <Section />
                 <Portfolio />

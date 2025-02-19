@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EnvelopeSimple, Clipboard, Check, List, X, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
+import { List, X, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <div className="relative">
+    <div id="profile" className="relative md:mb-[10rem]">
       {/* Navbar Container */}
       <div className="flex justify-between items-center h-[9rem] px-10 max-w-[1420px] mx-auto">
         {/* Logo */}
@@ -50,11 +50,11 @@ const Header = () => {
 
       {/* Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-[7.5rem] px-2 py-6 right-10 bg-[#303030] rounded-[22px] z-50 transition-all duration-300">
-          <ul className="text-[#ffffff] space-y-4 bg-transparent">
+        <div className="backdrop-blur-lg absolute top-[7.5rem] px-2 py-6 right-10 bg-[#ffffff]/20 rounded-[22px] z-50 transition-all duration-300">
+          <ul className="text-[#252525] space-y-4 bg-transparent">
             {/* LinkedIn */}
             <li className="bg-transparent">
-              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#444444] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mjohanbintangp/">
+              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#ffffff] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mjohanbintangp/">
                 <LinkedinLogo className="bg-transparent" size={20} weight="regular" />
                 <h1 className="text-[13px] bg-transparent">LinkedIn</h1>
               </a>
@@ -62,7 +62,7 @@ const Header = () => {
 
             {/* Instagram */}
             <li className="bg-transparent">
-              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#444444] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mjohanbintangp/">
+              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#ffffff] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mjohanbintangp/">
                 <InstagramLogo className="bg-transparent" size={20} weight="regular" />
                 <h1 className="text-[13px] bg-transparent">Instagram</h1>
               </a>
@@ -70,7 +70,7 @@ const Header = () => {
 
             {/* YouTube */}
             <li className="bg-transparent">
-              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#444444] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@code.habits">
+              <a className="bg-transparent flex items-center gap-3 px-4 py-2 rounded-md hover:bg-[#ffffff] transition-colors duration-200" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@code.habits">
                 <YoutubeLogo className="bg-transparent" size={20} weight="regular" />
                 <h1 className="text-[13px] bg-transparent">YouTube</h1>
               </a>

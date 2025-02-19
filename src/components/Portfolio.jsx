@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   return (
-    <div className="mt-24 mb-10 px-[50px] max-w-[1800px] flex justify-center">
+    <div id="portfolio" className="md:mb-[15rem] mb-[6rem] px-[50px] max-w-[1800px] flex justify-center">
       <div className="w-full">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="font-semibold text-[30px] text-[#252525] mb-[10px]">Portfolio</h1>
-          <p className="text-[#494949] text-[15px] text-center mb-[3rem]">I'm proud of the projects I've worked on, and I'm very open to those of you who want to see my projects, I mostly make website projects</p>
+          <h1 className="font-semibold text-[30px] text-[#252525] mb-[20px]">Portfolio</h1>
+          <p className="text-[#494949] text-[15px] md:mb-[5rem] mb-[3rem] text-center max-w-[530px]">I'm proud of the projects I've worked on, and I'm very open to those of you who want to see my projects, I mostly make website projects</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {/* Card 1 */}
           <div>
-            <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
+            <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] relative bg-[#ffffff] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
               <Link to="/MindEase">
                 <img src={mindeaseLogo} alt="mindeaseLogo" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
@@ -27,7 +27,7 @@ const Portfolio = () => {
 
           {/* Card 2 */}
           <div>
-            <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
+            <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] relative bg-[#ffffff] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
               <Link to="/LogiLink">
                 <img src={logilink} alt="Logilink" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
@@ -38,7 +38,7 @@ const Portfolio = () => {
 
           {/* Card 3 */}
           <div>
-            <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
+            <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] relative bg-[#ffffff] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
               <Link to="/AgriSync">
                 <img src={agrisync} alt="agrisync" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
@@ -49,7 +49,7 @@ const Portfolio = () => {
 
           {/* Card 4 */}
           <div>
-            <div className="relative bg-[#454545] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
+            <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] relative bg-[#ffffff] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
               <Link to="/Coursera.io">
                 <img src={coursera} alt="coursera" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
@@ -60,7 +60,7 @@ const Portfolio = () => {
 
           {/* Card 5 */}
           <div>
-            <div className="bg-[#F6F6F6] w-[300px] h-[300px] p-5 rounded-[50px] flex justify-center items-center text-center">
+            <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-[#ffffff] w-[300px] h-[300px] p-5 rounded-[50px] flex justify-center items-center text-center">
               <div className="bg-transparent">
                 <h1 className="bg-transparent text-[#252525] text-[20px] font-semibold">Coming soon</h1>
               </div>
@@ -71,7 +71,7 @@ const Portfolio = () => {
 
           {/* Card 6 */}
           <div>
-            <div className="bg-[#F6F6F6] w-[300px] h-[300px] p-5 rounded-[50px] flex justify-center items-center text-center">
+            <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-[#ffffff] w-[300px] h-[300px] p-5 rounded-[50px] flex justify-center items-center text-center">
               <div className="bg-transparent">
                 <h1 className="bg-transparent text-[#252525] text-[20px] font-semibold">Cooming soon</h1>
               </div>

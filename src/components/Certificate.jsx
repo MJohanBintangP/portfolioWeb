@@ -18,11 +18,11 @@ const Certificate = () => {
   }, []);
 
   return (
-    <div className="mx-auto max-w-[1280px] mb-[6rem] px-4">
+    <div id="certificate" className="mx-auto max-w-[1280px] mb-[6rem] px-4">
       <div
         className="flex flex-col lg:flex-row items-center text-white rounded-[20px] lg:rounded-[70px] h-auto lg:h-[700px] px-6 lg:px-[8rem] py-8"
         style={{
-          background: 'linear-gradient(0deg, #ffffff 20%, #f4f4f4 100%)',
+          background: 'linear-gradient(0deg, #ffffff 20%, #FCFCFC 100%)',
         }}
       >
         <div className="bg-transparent flex-1 mb-6 lg:mb-0 text-center lg:text-left">
