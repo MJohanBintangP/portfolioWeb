@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { List, X, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
-import BlurText from './BlurText';
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -17,9 +16,7 @@ const Header = () => {
       {/* Navbar Container */}
       <div className="flex justify-between items-center h-[9rem] px-10 max-w-[1420px] mx-auto">
         {/* Logo */}
-        <h1 className="text-[#4B4B4B] text-[20px] font-semibold">
-          <BlurText text="mjohanbintangp" delay={100} animateBy="words" direction="top" onAnimationComplete={handleAnimationComplete} className="text-2xl" />
-        </h1>
+        <h1 className="text-[#4B4B4B] text-[20px] font-semibold">mjohanbintangp</h1>
         {/* Desktop Navigation */}
         <ul className="hidden lg:flex text-[#252525] items-center text-[13px]">
           <li className="p-4 hover:text-[#d9d9d9] transition-colors duration-300">
