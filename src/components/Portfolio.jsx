@@ -4,13 +4,18 @@ import agrisync from '../assets/agrisync.png';
 import logilink from '../assets/logilink.png';
 import coursera from '../assets/coursera.png';
 import { Link } from 'react-router-dom';
+import ScrollFloat from './ScrollFloat';
 
 const Portfolio = () => {
   return (
     <div id="portfolio" className="md:mb-[15rem] mb-[6rem] px-[50px] max-w-[1800px] flex justify-center">
       <div className="w-full">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="font-semibold text-[30px] text-[#252525] mb-[20px]">Portfolio</h1>
+          <h1 className="font-semibold text-[30px] text-[#252525]">
+            <ScrollFloat animationDuration={1} ease="back.inOut(2)" scrollStart="center bottom+=50%" scrollEnd="bottom bottom-=40%" stagger={0.03}>
+              Portfolio
+            </ScrollFloat>
+          </h1>
           <p className="text-[#494949] text-[15px] md:mb-[5rem] mb-[3rem] text-center max-w-[530px]">I'm proud of the projects I've worked on, and I'm very open to those of you who want to see my projects, I mostly make website projects</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">

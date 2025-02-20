@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { DownloadSimple, Check } from '@phosphor-icons/react';
 import Johan from '../assets/fotoJohan.png';
 
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 const Section = () => {
   const [iconState, setIconState] = useState('default');
 
