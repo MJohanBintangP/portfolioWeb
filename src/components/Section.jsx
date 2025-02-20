@@ -19,7 +19,7 @@ const Section = () => {
   };
 
   return (
-    <div className="md:mb-[5rem] mb-[0rem] max-w-[1550px] mx-auto flex flex-col justify-between md:flex-row items-center px-10 md:px-[6.5rem]">
+    <div className="md:mb-[6rem] mb-[0rem] max-w-[1550px] mx-auto flex flex-col justify-between md:flex-row items-center px-10 md:px-[6.5rem]">
       {/* Kontainer Teks */}
       <div className="flex flex-col max-w-full md:max-w-[600px] text-left md:text-left">
         <h1 className="text-[20px] md:text-[25px] font-semibold mb-[2px] text-[#252525]">Junior Frontend Developer</h1>
@@ -39,16 +39,15 @@ const Section = () => {
           {iconState === 'clicked' ? <Check size={16} weight="bold" className="bg-transparent" /> : iconState === 'hover' ? <DownloadSimple size={16} weight="bold" className="bg-transparent" /> : 'Download CV'}
         </button>
       </div>
-
       <div className="relative flex flex-col items-center md:items-start mt-10 md:mt-0">
         {/* Status */}
-        <div className=" bg-transparent absolute top-2 left-0 md:left-10 translate-x-[50%] md:translate-x-36 -translate-y-1/2 flex items-center space-x-2 z-10">
+        <div className="bg-transparent absolute top-2 left-0 md:left-10 translate-x-[50%] md:translate-x-36 -translate-y-1/2 flex items-center space-x-2 z-10">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
           <span className="bg-transparent text-sm font-medium text-black">Open to internship</span>
         </div>
 
         {/* Card */}
-        <div className="mb-[5rem] -rotate-2 relative flex flex-col items-center w-[220px] p-4 bg-[#F5F5F5] rounded-[35px] md:mr-[8rem]">
+        <div className="mb-[5rem] rotate-2 relative flex flex-col items-center w-[220px] p-4 bg-[#F5F5F5] rounded-[35px] md:mr-[8rem]">
           {/* Foto Profil */}
           <div className="w-[185px] h-[220px] mb-[1.2rem] rounded-[25px] overflow-hidden">
             <img src={Johan} alt="Profile" className="w-full h-full object-cover" />

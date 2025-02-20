@@ -8,7 +8,7 @@ const Skill = () => {
   return (
     <div id="skill" className="max-w-[1300px] mx-auto text-white flex flex-col items-center justify-center px-4 sm:px-8 mb-[5rem]">
       <h1 className="text-[30px] text-[#252525] font-bold md:mb-[12rem] mb-[6rem]">Tech Skills</h1>
-      <div className="flex flex-wrap justify-center gap-[12rem] w-full md:mb-[14rem] mb-[10rem]">
+      <div className="flex flex-wrap justify-center gap-[12rem] w-full md:mb-[14rem] mb-[6rem]">
         {[
           { src: ReactLogo, alt: 'React Icon', link: 'https://reactjs.org/' },
           { src: TailwindLogo, alt: 'Tailwind Icon', link: 'https://tailwindcss.com/' },
