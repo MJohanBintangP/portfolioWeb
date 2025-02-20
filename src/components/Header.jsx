@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { List, X, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 
-const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-};
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
