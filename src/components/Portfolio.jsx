@@ -2,7 +2,7 @@ import React from 'react';
 import mindeaseLogo from '../assets/mindease.png';
 import agrisync from '../assets/agrisync.png';
 import logilink from '../assets/logilink.png';
-import flexnative from '../assets/Flexnative.png';
+import flexnative from '../assets/flexnative.png';
 import { Link } from 'react-router-dom';
 import ScrollFloat from './ScrollFloat';
 
