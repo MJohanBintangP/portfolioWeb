@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import Mindease from './pages/Mindease';
 import Agrisync from './pages/Agrisync';
 import Logilink from './pages/Logilink';
-import Coursera from './pages/Coursera';
+import Flexnative from './pages/Flexnative';
 import Navbar from './components/Navbar';
 
 export default function App() {
@@ -40,7 +40,7 @@ export default function App() {
           <Route path="/MindEase" element={<Mindease />} />
           <Route path="/AgriSync" element={<Agrisync />} />
           <Route path="/LogiLink" element={<Logilink />} />
-          <Route path="/Coursera.io" element={<Coursera />} />
+          <Route path="/FlexNative" element={<Flexnative />} />
         </Routes>
       </div>
     </Router>

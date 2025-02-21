@@ -2,7 +2,7 @@ import React from 'react';
 import mindeaseLogo from '../assets/mindease.png';
 import agrisync from '../assets/agrisync.png';
 import logilink from '../assets/logilink.png';
-import coursera from '../assets/coursera.png';
+import flexnative from '../assets/Flexnative.png';
 import { Link } from 'react-router-dom';
 import ScrollFloat from './ScrollFloat';
 
@@ -55,12 +55,12 @@ const Portfolio = () => {
           {/* Card 4 */}
           <div>
             <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] relative bg-[#ffffff] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
-              <Link to="/Coursera.io">
-                <img src={coursera} alt="coursera" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
+              <Link to="/FlexNative">
+                <img src={flexnative} alt="coursera" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
             </div>
             <p className="text-[#252525]  text-xs mt-4 lg:text-left text-center">Web App</p>
-            <h3 className="text-[#252525]  text-xl font-semibold lg:text-left text-center">Coursera.io</h3>
+            <h3 className="text-[#252525]  text-xl font-semibold lg:text-left text-center">FlexNative</h3>
           </div>
 
           {/* Card 5 */}
