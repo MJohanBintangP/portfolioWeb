@@ -56,7 +56,7 @@ const Portfolio = () => {
           <div>
             <div className="drop-shadow-[0_0_10px_rgba(0,0,0,0.05)] relative bg-[#ffffff] w-[300px] h-[300px] rounded-[50px] overflow-hidden group">
               <Link to="/FlexNative">
-                <img src={flexnative} alt="coursera" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
+                <img src={flexnative} alt="flexnative" className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-125" />
               </Link>
             </div>
             <p className="text-[#252525]  text-xs mt-4 lg:text-left text-center">Web App</p>
